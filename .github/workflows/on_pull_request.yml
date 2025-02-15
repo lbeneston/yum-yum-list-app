@@ -1,4 +1,4 @@
-name: Check on pull request
+name: Checks and tests units
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  on-pull-request-check:
+  on-pull-request-check-and-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,4 +29,7 @@ jobs:
 
     - name: 🔥 Check deadcode
       run: yarn deadcode
+
+    - name: 🧪 Run tests units
+      run: yarn test
 
