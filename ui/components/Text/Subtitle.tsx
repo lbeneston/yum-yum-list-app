@@ -1,10 +1,11 @@
-import { StyleSheet } from 'react-native'
 import { ThemedText, ThemedTextProps } from '@/ui/components/_Themed/ThemedText'
+import styled from 'styled-components/native'
 
 export const Subtitle = (props: ThemedTextProps) => (
-  <ThemedText {...props} style={[styles.subtitle, props.style]} />
+  <StyledThemeText {...props} style={props.style} />
 )
 
-const styles = StyleSheet.create({
-  subtitle: { fontSize: 20, fontWeight: 'bold' },
+const StyledThemeText = styled(ThemedText)({
+  fontSize: 20,
+  fontWeight: 'bold',
 })

@@ -1,10 +1,11 @@
 import { PropsWithChildren } from 'react'
-import { ScrollView, StyleSheet } from 'react-native'
+import { ScrollView } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 import { useBottomTabOverflow } from '@/ui/components/TabBar/TabBarBackground'
 import { Title } from '@/ui/components/Text/Title'
 import { Subtitle } from '@/ui/components/Text/Subtitle'
+import styled from 'styled-components/native'
 
 type Props = PropsWithChildren<{
   title: string
@@ -20,29 +21,28 @@ export default function PageWithoutHeader({
   const { top } = useSafeAreaInsets()
 
   return (
-    <ThemedView style={styles.container}>
+    <Container>
       <ScrollView
         contentContainerStyle={{ paddingTop: top, paddingBottom: bottom }}
         scrollIndicatorInsets={{ bottom }}
       >
-        <ThemedView style={styles.content}>
+        <Content>
           <Title>{title}</Title>
           {subtitle && <Subtitle>{subtitle}</Subtitle>}
           {children}
-        </ThemedView>
+        </Content>
       </ScrollView>
-    </ThemedView>
+    </Container>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  content: {
-    flex: 1,
-    gap: 16,
-    padding: 32,
-    overflow: 'hidden',
-  },
+const Container = styled(ThemedView)({
+  flex: 1,
+})
+
+const Content = styled(ThemedView)({
+  flex: 1,
+  gap: 16,
+  padding: 32,
+  overflow: 'hidden',
 })

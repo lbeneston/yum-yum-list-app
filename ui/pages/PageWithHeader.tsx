@@ -1,10 +1,12 @@
 import { PropsWithChildren } from 'react'
-import { ScrollView, StyleSheet } from 'react-native'
+import { ScrollView } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 import { useBottomTabOverflow } from '@/ui/components/TabBar/TabBarBackground'
 import { Title } from '@/ui/components/Text/Title'
 import { Subtitle } from '@/ui/components/Text/Subtitle'
+import styled from 'styled-components/native'
+import { Colors } from '@/constants/Colors'
 
 const HEADER_HEIGHT = 50
 
@@ -24,49 +26,45 @@ export default function PageWithHeader({
   const { top } = useSafeAreaInsets()
 
   return (
-    <ThemedView style={styles.container}>
-      <ThemedView
-        lightColor="#A1CEDC"
-        darkColor="#1D3D47"
-        style={[
-          styles.header,
-          { height: HEADER_HEIGHT + top, paddingTop: top },
-        ]}
+    <Container>
+      <Header
+        lightColor={Colors.light.header}
+        darkColor={Colors.dark.header}
+        style={{ height: HEADER_HEIGHT + top, paddingTop: top }}
       >
         <Subtitle>{headerTitle}</Subtitle>
-      </ThemedView>
-
+      </Header>
       <ScrollView
         contentContainerStyle={{ paddingTop: top, paddingBottom: bottom }}
         scrollIndicatorInsets={{ bottom }}
       >
-        <ThemedView style={styles.content}>
+        <Content>
           {title && <Title>{title}</Title>}
           {subtitle && <Subtitle>{subtitle}</Subtitle>}
           {children}
-        </ThemedView>
+        </Content>
       </ScrollView>
-    </ThemedView>
+    </Container>
   )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  header: {
-    position: 'absolute',
-    top: 0,
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    zIndex: 10,
-  },
-  content: {
-    flex: 1,
-    gap: 16,
-    padding: 32,
-    overflow: 'hidden',
-    marginTop: HEADER_HEIGHT,
-  },
+const Container = styled(ThemedView)({
+  flex: 1,
+})
+
+const Header = styled(ThemedView)({
+  position: 'absolute',
+  top: 0,
+  width: '100%',
+  justifyContent: 'center',
+  alignItems: 'center',
+  zIndex: 10,
+})
+
+const Content = styled(ThemedView)({
+  flex: 1,
+  gap: 16,
+  padding: 32,
+  overflow: 'hidden',
+  marginTop: HEADER_HEIGHT,
 })
