@@ -4,12 +4,13 @@
   "version": "1.0.0",
   "scripts": {
     "deadcode": "knip",
-    "lint": "expo lint",
     "lint:fix": "eslint --fix .",
-    "start": "expo start",
+    "lint": "expo lint",
     "start:android": "expo start --android",
     "start:ios": "expo start --ios",
-    "start:web": "expo start --web"
+    "start:web": "expo start --web",
+    "start": "expo start",
+    "type": "yarn tsc --noEmit"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
