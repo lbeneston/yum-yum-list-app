@@ -1,14 +1,12 @@
-import { StyleSheet } from 'react-native'
 import { ThemedText, ThemedTextProps } from '@/ui/components/_Themed/ThemedText'
-
-const styles = StyleSheet.create({
-  title: { fontSize: 32, lineHeight: 32, fontWeight: 'bold' },
-})
+import styled from 'styled-components/native'
 
 export const Title = (props: ThemedTextProps) => (
-  <ThemedText
-    {...props}
-    style={[styles.title, props.style]}
-    accessibilityRole="header"
-  />
+  <StyledThemeText {...props} style={props.style} accessibilityRole="header" />
 )
+
+const StyledThemeText = styled(ThemedText)({
+  fontSize: 32,
+  lineHeight: 32,
+  fontWeight: 'bold',
+})
