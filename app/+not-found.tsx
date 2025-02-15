@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link, Stack } from 'expo-router';
-import { StyleSheet } from 'react-native';
+import React from 'react'
+import { Link, Stack } from 'expo-router'
+import { StyleSheet } from 'react-native'
 
-import { Body } from '@/ui/components/Text/Body';
-import { Title } from '@/ui/components/Text/Title';
-import { ThemedView } from '@/ui/components/_Themed/ThemedView';
+import { Body } from '@/ui/components/Text/Body'
+import { Title } from '@/ui/components/Text/Title'
+import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 
 export default function NotFound() {
   return (
@@ -17,7 +17,7 @@ export default function NotFound() {
         </Link>
       </ThemedView>
     </React.Fragment>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   link: {
     padding: 15,
   },
-});
+})
