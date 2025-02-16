@@ -6,7 +6,7 @@ export const Title = (props: ThemedTextProps) => (
 )
 
 const StyledThemeText = styled(ThemedText)({
-  fontSize: 32,
-  lineHeight: 32,
+  fontSize: '32px',
+  lineHeight: '32px',
   fontWeight: 'bold',
 })

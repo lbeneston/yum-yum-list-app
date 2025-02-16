@@ -6,6 +6,6 @@ export const Subtitle = (props: ThemedTextProps) => (
 )
 
 const StyledThemeText = styled(ThemedText)({
-  fontSize: 20,
+  fontSize: '20px',
   fontWeight: 'bold',
 })
