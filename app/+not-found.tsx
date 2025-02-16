@@ -24,7 +24,7 @@ const Container = styled(ThemedView)({
   flex: 1,
   alignItems: 'center',
   justifyContent: 'center',
-  padding: 32,
+  padding: 20,
   gap: 16,
 })
 

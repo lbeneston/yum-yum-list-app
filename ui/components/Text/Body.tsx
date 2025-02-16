@@ -7,5 +7,5 @@ export const Body = (props: ThemedTextProps) => (
 
 const StyledThemeText = styled(ThemedText)({
   fontSize: 16,
-  lineHeight: 24,
+  lineHeight: '24px',
 })

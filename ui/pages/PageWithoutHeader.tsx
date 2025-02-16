@@ -4,19 +4,13 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 import { useBottomTabOverflow } from '@/ui/components/TabBar/TabBarBackground'
 import { Title } from '@/ui/components/Text/Title'
-import { Subtitle } from '@/ui/components/Text/Subtitle'
 import styled from 'styled-components/native'
 
 type Props = PropsWithChildren<{
   title: string
-  subtitle?: string
 }>
 
-export default function PageWithoutHeader({
-  children,
-  title,
-  subtitle,
-}: Props) {
+export default function PageWithoutHeader({ children, title }: Props) {
   const bottom = useBottomTabOverflow()
   const { top } = useSafeAreaInsets()
 
@@ -27,8 +21,9 @@ export default function PageWithoutHeader({
         scrollIndicatorInsets={{ bottom }}
       >
         <Content>
-          <Title>{title}</Title>
-          {subtitle && <Subtitle>{subtitle}</Subtitle>}
+          <ThemedViewWithPaddingHorizontal>
+            <Title>{title}</Title>
+          </ThemedViewWithPaddingHorizontal>
           {children}
         </Content>
       </ScrollView>
@@ -43,6 +38,9 @@ const Container = styled(ThemedView)({
 const Content = styled(ThemedView)({
   flex: 1,
   gap: 16,
-  padding: 32,
-  overflow: 'hidden',
+  paddingVertical: 20,
+})
+
+const ThemedViewWithPaddingHorizontal = styled(ThemedView)({
+  paddingHorizontal: 20,
 })
