@@ -1,0 +1,199 @@
+[
+    {
+      "name": "Brets",
+      "product": "chips",
+      "flavors": [
+        {
+          "flavor": "La Craquante au sel de Guérande",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Nature L'Originale",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "À l'Ancienne au sel de Guérande",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "La Paysanne au sel de Guérande",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Nature Ancienne",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Nature Craquante",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Rôtisserie - cuisson au chaudron",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Nature La Craquante",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Nature La Paysanne",
+          "category": "nature",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Pastis",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Cheddar Jalapeno",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Sauce curry",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées au Bleu d'Auvergne AOP",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées au Fromage du Jura",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Poulet braisé",
+          "category": "aromatisées",
+          "sub_category": []
+        },
+        {
+          "flavor": "Ondulées saveur Sel & Vinaigre",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Chèvre & Piment d'Espelette",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées aux Cèpes",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Sauce Pommes Frites",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Chili pointe de menthe",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Tomates séchées et vinaigre balsamique",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Ondulées saveur Sauce Curry",
+          "category": "aromatisées",
+          "sub_category": ["halal", "sans gluten", "végétarien"]
+        },
+        {
+          "flavor": "Chips de Sarrasin Nature",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "Chips de Sarrasin à la Forestière",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "Chips de Sarrasin Curry Crème",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "So Crack Sel de Guérande",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "So Crack Curry Fruity",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "So Crack saveur Moutarde Pickles",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "So Crack Tomate olive origan",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        },
+        {
+          "flavor": "So Crack saveur Sweet & Salty",
+          "category": "sarrasin",
+          "sub_category": ["halal", "végétarien"]
+        }
+      ]
+    },
+    {
+      "name": "Pringles",
+      "product": "chips",
+      "flavors": [
+        {
+          "flavor": "Salt & Vinegar",
+          "category": "classique",
+          "sub_category": ["végétarien"]
+        },
+        {
+          "flavor": "Cheese & Onion",
+          "category": "classique",
+          "sub_category": ["végétarien"]
+        },
+        {
+          "flavor": "Pizza",
+          "category": "classique",
+          "sub_category": ["végétarien"]
+        },
+        {
+          "flavor": "Hot & Spicy",
+          "category": "classique",
+          "sub_category": ["végétarien"]
+        },
+        {
+          "flavor": "Bacon",
+          "category": "classique",
+          "sub_category": ["végétarien"]
+        },
+        {
+          "flavor": "Emmental Cheese",
+          "category": "classique",
+          "sub_category": ["végétarien"]
+        },
+        {
+          "flavor": "HOT Smokin' BBQ Ribs Flavour",
+          "category": "hot",
+          "sub_category": ["végétarien"]
+        }
+      ]
+    }
+]
