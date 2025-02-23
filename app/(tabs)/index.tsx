@@ -1,15 +1,15 @@
 import PageWithoutHeader from '@/ui/pages/PageWithoutHeader'
 import brands from '@/data/brands.json'
-import { Title } from '@/ui/components/Text/Title'
-import { Subtitle } from '@/ui/components/Text/Subtitle'
+import { Title1 } from '@/ui/components/Text/Title1'
+import { Title2 } from '@/ui/components/Text/Title2'
 import styled from 'styled-components/native'
-import { Colors } from '@/constants/Colors'
 import React from 'react'
-import { Link } from 'expo-router'
 import { ThemedFlatList } from '@/ui/components/_Themed/ThemedFlatList'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
+import { TileProduct } from '@/ui/components/Tile/TileProduct'
+import { TileSeeMore } from '@/ui/components/Tile/TileSeeMore'
 
-type Flavor = {
+type Product = {
   flavor: string
   category: string
   sub_category: string[]
@@ -19,36 +19,31 @@ export default function Home() {
   return (
     <PageWithoutHeader title="YumYumListe 😋">
       <ThemedViewWithPaddingHorizontal>
-        <Subtitle>Les tops listes</Subtitle>
+        <Title2>Les tops listes</Title2>
       </ThemedViewWithPaddingHorizontal>
       {brands.map((brand) => (
         <React.Fragment key={brand.name}>
           <ThemedViewWithMarginTop>
-            <Title>{brand.name}</Title>
+            <Title1>{brand.name}</Title1>
           </ThemedViewWithMarginTop>
           <ThemedFlatList
             data={brand.flavors.slice(0, 5)}
-            keyExtractor={(item: Flavor) => item.flavor}
+            keyExtractor={(item: Product) => item.flavor}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{ paddingHorizontal: 20 }}
             ItemSeparatorComponent={() => <FlatListSeparatorComponent />}
             ListFooterComponent={() => (
-              <BoxSeeMore href={`/brands/${brand.name}`}>
-                <SubtitleContainer>
-                  <CustomSubtitle>Voir plus</CustomSubtitle>
-                </SubtitleContainer>
-              </BoxSeeMore>
+              <TileSeeMore href={`/brands/${brand.name}`} />
             )}
             renderItem={({ item }) => {
               const flavorWithBrand = `${brand.name} ${item.flavor}`
               return (
-                <FlavorBox
+                <TileProduct
                   key={item.flavor}
+                  flavor={item.flavor}
                   href={`/products/${flavorWithBrand}`}
-                >
-                  <Subtitle>{item.flavor}</Subtitle>
-                </FlavorBox>
+                />
               )
             }}
           />
@@ -62,39 +57,10 @@ const FlatListSeparatorComponent = styled.View({
   width: 15,
 })
 
-const BoxBase = styled(Link)({
-  padding: 15,
-  borderRadius: 8,
-  width: 180,
-  height: 150,
-})
-
-const FlavorBox = styled(BoxBase)({
-  backgroundColor: Colors.dark.header,
-})
-
-const BoxSeeMore = styled(BoxBase)({
-  backgroundColor: 'transparent',
-  marginLeft: 15,
-  borderWidth: 2,
-  borderColor: Colors.dark.header,
-})
-
 const ThemedViewWithPaddingHorizontal = styled(ThemedView)({
   paddingHorizontal: 20,
 })
 
 const ThemedViewWithMarginTop = styled(ThemedViewWithPaddingHorizontal)({
   marginTop: 20,
-})
-
-const CustomSubtitle = styled(Subtitle)({
-  color: Colors.dark.header,
-})
-
-const SubtitleContainer = styled(ThemedView)({
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100%',
-  width: '100%',
 })

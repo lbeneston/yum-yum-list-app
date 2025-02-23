@@ -6,152 +6,182 @@
         {
           "flavor": "La Craquante au sel de Guérande",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Nature L'Originale",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "À l'Ancienne au sel de Guérande",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "La Paysanne au sel de Guérande",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Nature Ancienne",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Nature Craquante",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Rôtisserie - cuisson au chaudron",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Nature La Craquante",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Nature La Paysanne",
           "category": "nature",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Pastis",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Cheddar Jalapeno",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Sauce curry",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées au Bleu d'Auvergne AOP",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées au Fromage du Jura",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Poulet braisé",
           "category": "aromatisées",
-          "sub_category": []
+          "sub_category": [],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Sel & Vinaigre",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Chèvre & Piment d'Espelette",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées aux Cèpes",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Sauce Pommes Frites",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Chili pointe de menthe",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Tomates séchées et vinaigre balsamique",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Ondulées saveur Sauce Curry",
           "category": "aromatisées",
-          "sub_category": ["halal", "sans gluten", "végétarien"]
+          "sub_category": ["halal", "sans gluten", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Chips de Sarrasin Nature",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Chips de Sarrasin à la Forestière",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Chips de Sarrasin Curry Crème",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "So Crack Sel de Guérande",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "So Crack Curry Fruity",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "So Crack saveur Moutarde Pickles",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "So Crack Tomate olive origan",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "So Crack saveur Sweet & Salty",
           "category": "sarrasin",
-          "sub_category": ["halal", "végétarien"]
+          "sub_category": ["halal", "végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         }
       ]
     },
@@ -162,37 +192,44 @@
         {
           "flavor": "Salt & Vinegar",
           "category": "classique",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Cheese & Onion",
           "category": "classique",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Pizza",
           "category": "classique",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Hot & Spicy",
           "category": "classique",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Bacon",
           "category": "classique",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "Emmental Cheese",
           "category": "classique",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         },
         {
           "flavor": "HOT Smokin' BBQ Ribs Flavour",
           "category": "hot",
-          "sub_category": ["végétarien"]
+          "sub_category": ["végétarien"],
+          "image": "la_craquante_au_sel_de_guerande"
         }
       ]
     }

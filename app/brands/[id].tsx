@@ -1,13 +1,14 @@
-import { Link, Stack, useLocalSearchParams } from 'expo-router'
-import { Subtitle } from '@/ui/components/Text/Subtitle'
+import { Stack, useLocalSearchParams } from 'expo-router'
+import { Title2 } from '@/ui/components/Text/Title2'
 import styled from 'styled-components/native'
 import React from 'react'
 import { Colors } from '@/constants/Colors'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 import { ListRenderItemInfo } from 'react-native'
 import brands from '@/data/brands.json'
-import { Body } from '@/ui/components/Text/Body'
 import { ThemedFlatList } from '@/ui/components/_Themed/ThemedFlatList' // Assure-toi d'importer le composant
+import { TileProductLine } from '@/ui/components/Tile/TileProductLine'
+import { useThemeColor } from '@/hooks/useThemeColor'
 
 type Flavor = {
   flavor: string
@@ -16,6 +17,7 @@ type Flavor = {
 }
 
 export default function Brands() {
+  const headerColor = useThemeColor({}, 'header')
   const { id: selectedBrand } = useLocalSearchParams()
   const brand = brands.find((brand) => brand.name === selectedBrand)
 
@@ -25,12 +27,15 @@ export default function Brands() {
         <Stack.Screen
           options={{
             title: brand.name,
-            headerBackTitle: 'Retour',
-            headerStyle: { backgroundColor: Colors.dark.header },
+            headerStyle: { backgroundColor: headerColor },
             headerTintColor: Colors.dark.tint,
+            headerLargeTitle: true,
+            headerBackButtonDisplayMode: 'minimal',
+            headerLargeTitleStyle: { fontSize: 25, fontWeight: 'bold' },
           }}
         />
         <ThemedFlatList
+          contentInsetAdjustmentBehavior="automatic"
           data={brand.flavors}
           keyExtractor={(item: Flavor) => item.flavor}
           showsVerticalScrollIndicator={false}
@@ -39,15 +44,12 @@ export default function Brands() {
           renderItem={({ item }: ListRenderItemInfo<Flavor>) => {
             const flavorWithBrand = `${brand.name} ${item.flavor}`
             return (
-              <FlavorBox
+              <TileProductLine
                 key={item.flavor}
+                flavor={item.flavor}
+                category={item.category}
                 href={`/products/${flavorWithBrand}`}
-              >
-                <RowContainer>
-                  <Subtitle>{item.flavor}</Subtitle>
-                  <Body>{item.category}</Body>
-                </RowContainer>
-              </FlavorBox>
+              />
             )
           }}
         />
@@ -57,26 +59,11 @@ export default function Brands() {
 
   return (
     <ThemedView>
-      <Subtitle>Aucune marque trouvée</Subtitle>
+      <Title2>Aucune marque trouvée</Title2>
     </ThemedView>
   )
 }
 
 const FlatListSeparatorComponent = styled.View({
   height: 15,
-})
-
-const BoxBase = styled(Link)({
-  padding: 15,
-  borderRadius: 8,
-  width: '100%',
-  height: 100,
-})
-
-const FlavorBox = styled(BoxBase)({
-  backgroundColor: Colors.dark.header,
-})
-
-const RowContainer = styled.View({
-  flexDirection: 'column',
 })
