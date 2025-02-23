@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 import { useBottomTabOverflow } from '@/ui/components/TabBar/TabBarBackground'
-import { Title } from '@/ui/components/Text/Title'
+import { Title1 } from '@/ui/components/Text/Title1'
 import styled from 'styled-components/native'
 
 type Props = PropsWithChildren<{
@@ -22,7 +22,7 @@ export default function PageWithoutHeader({ children, title }: Props) {
       >
         <Content>
           <ThemedViewWithPaddingHorizontal>
-            <Title>{title}</Title>
+            <Title1>{title}</Title1>
           </ThemedViewWithPaddingHorizontal>
           {children}
         </Content>

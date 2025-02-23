@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Stack } from 'expo-router'
 
 import { Body } from '@/ui/components/Text/Body'
-import { Title } from '@/ui/components/Text/Title'
+import { Title1 } from '@/ui/components/Text/Title1'
 import { ThemedView } from '@/ui/components/_Themed/ThemedView'
 import styled from 'styled-components/native'
 
@@ -11,7 +11,7 @@ export default function NotFound() {
     <React.Fragment>
       <Stack.Screen options={{ title: 'Oops!' }} />
       <Container>
-        <Title>This screen doesn't exist.</Title>
+        <Title1>This screen doesn't exist.</Title1>
         <StyledLink href="/">
           <Body>Go to home screen!</Body>
         </StyledLink>
